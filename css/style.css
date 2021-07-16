@@ -1,0 +1,26 @@
+.card {
+    border: 2px solid lightgrey;
+}
+
+#newamzn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: grey;
+
+}
+
+#newamzn:before,
+#newamzn:after {
+    content: '';
+    flex: 1;
+    border: 1px solid lightgrey;
+}
+
+#newamzn:not(:empty)::before {
+    margin-right: .25em;
+}
+
+#newamzn:not(:empty)::after {
+    margin-left: .25em;
+}
